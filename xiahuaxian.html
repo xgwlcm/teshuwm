@@ -4,9 +4,9 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>繁简转换器-在线繁体字转换工具</title>
-<meta name="keywords" content="繁简转换,繁体字转换,繁简转换工具" />
-<meta name="description" content="在线繁体字转换器帮你把简体字转换为繁体字，或者把繁体字翻译成简体字，非常简单就能实现中文汉字的繁简转换，希望你们喜欢这款工具。" />
+<title>下划线生成器-下划线文字生成工具</title>
+<meta name="keywords" content="下划线昵称,下划线网名,下划线生成器,下划线文字" />
+<meta name="description" content="下划线文字生成器帮你制作带下划线的网名和昵称，比如：꯭悠꯭然꯭，带下划线符号的特效文字非常好看个性，希望你们喜欢这款下划线文字生成工具" />
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 <link href="style.css"  type="text/css" rel="stylesheet"/>
@@ -43,36 +43,46 @@
 <div class="main">
 <div class="fleft">
 	<div class="form-style-1">
-		<li><h3 style="text-align: center;">繁简火星文转换器</h3></li>
+	<li><h3 style="text-align: center;">下划线文字生成器</h3></li>
 		
-				<li style="text-indent: 2em;">繁简火星文转换器帮你把简体字、繁体字、火星文彼此之间进行转换，转换成功之后点击复制按钮会自动复制文字，如果复制不成功请手动复制。</li>
+				<li style="text-indent: 2em;">下划线文字生成器帮你生成带下划线的特效文字，用在网名昵称上非常个性引人注意。</li>
 				
 			
-			<div id="app">
-			<li>
-    <textarea class="field-long field-textarea" id="txt" name="txt" rows="10" placeholder="温馨提示：支持简体字、繁体字和火星文的相互转换"></textarea>
-	</li>
-   <li style="text-align: center;">
-      <!-- <button type="button" class="btn btn-success to-simple">转为简体</button> -->
-      <input type="button" value="简转繁" class="btn btn-success convert" data-type="1">
-      <input type="button" value="繁转简" class="btn btn-success convert" data-type="2">
-      <input type="button" value="简转火" class="btn btn-success convert" data-type="3">
-      <input type="button" value="火转简" class="btn btn-success convert" data-type="4">
-      <input type="button" value="繁转火" class="btn btn-success convert" data-type="5">
-      <input type="button" value="火转繁" class="btn btn-success convert" data-type="6">
-      <input type="button" value="清空" class="btn btn-danger clear">
-	  <input type="submit" data-clipboard-action="copy" data-clipboard-target="textarea" value="复制" class="btn">
-    </li>
+				
+				<li><label>输入要加的名字</label> 
+					<input type="text" id="text" autocomplete="off"  placeholder="请输入名称" class="field-long">
+					</li>
+					
+					<li>
+				<label>下划线网名演示效果</label> 
+				</li>
+				<li class="text" id="m">悠꯭然꯭</li>
+				
+				
+				<label  class="el-radio" style="display:none">
+					<span class="el-radio__input ">
+						<span class="el-radio__inner"></span>
+						<input type="radio" aria-hidden="true" tabindex="-1" class="el-radio__original" value="xh" id="wm" checked="checked">
+					</span>
+					
+				</label>
+				
+				<li><label>生成结果<span>(点击生成后输出结果)</span></label> 	
+			
+		<h5 class="q">
 
- 
-  </div>
+		</h5>
+		</li>
+<li style="text-align: center;">
+					<input  id="btn" type="submit" value="生成">
+				<input type="submit" data-clipboard-action="copy" data-clipboard-target="#fuhao" value="复制" class="btn" style="margin-left: 20px;">
+			</li>
 			
 		
 		</div>
 </ul>
+      
 </div>
-
-		</div>
 		</div>
 <div class="footer">
 	<div class="box">
@@ -137,24 +147,6 @@ function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
 }
 </script>
-<script src="convert.js"></script>
-  <script>
-    let textarea = document.getElementById('txt');
-    document.getElementById('app').addEventListener('click', function(e) {
-      let target = e.target;
-      let classList = target.classList;
-      // 转换
-      if(classList.contains('convert')) {
-        let type = target.dataset.type;
-        let words = textarea.value;
-        textarea.value = convert(words, type);
-      // 清空
-      } else if(classList.contains('clear')) {
-        textarea.value = '';
-        // 复制
-      }
-    }, false);
-  </script>
-
+<script type="text/javascript" src="index.js" ></script>
 	</body>
 </html>

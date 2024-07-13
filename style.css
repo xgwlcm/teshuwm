@@ -123,7 +123,7 @@ ul.wzimg  li a span {
 }
 .article li
 {
-        background: url(../images/li.gif) no-repeat;
+        background: url(li.gif) no-repeat;
     background-position: 9px 9px;
     height: 35px;
    
@@ -137,7 +137,7 @@ ul.wzimg  li a span {
 }
 .articleso li
 {
-        background: url(../images/li.gif) no-repeat;
+        background: url(li.gif) no-repeat;
     background-position: 9px 9px;
     height: 35px;
    
@@ -277,7 +277,7 @@ text-align:center;height:20px;width:90px;background-color:#666;color:#fff; font-
     line-height: 20px;
 }
 .WmBox .wm li, .WmBox .qm li {
-    background: url(../images/li.gif) no-repeat;
+    background: url(li.gif) no-repeat;
     background-position: 9px 9px;
    
     text-indent: 20px;
@@ -290,7 +290,7 @@ text-align:center;height:20px;width:90px;background-color:#666;color:#fff; font-
 }
 
 .g-big-box ul h2 {
-    background: #fbfbfb url(../images/bg.gif);
+    background: #fbfbfb url(bg.gif);
     line-height: 21px;
     height: 21px;
     font-size: 16px;
@@ -1131,7 +1131,7 @@ select{
 }
 .m-tip{left:50%;}
 .article li{
-        background: url(../images/li.gif) no-repeat;
+        background: url(li.gif) no-repeat;
     background-position: 9px 9px;
     height: 35px;
    
@@ -1231,7 +1231,7 @@ ul.wzimg  li img{
     line-height: 20px;
 }
 .WmBox .wm li, .WmBox .qm li {
-    background: url(../images/li.gif) no-repeat;
+    background: url(li.gif) no-repeat;
     background-position: 9px 9px;
    
     text-indent: 20px;
@@ -1286,7 +1286,7 @@ ul.wzimg  li img{
     cursor: pointer;
 	margin-right: -1px;
 }
-.ico-nav-gotop{background-image: url(../images/ico.png)}
+.ico-nav-gotop{background-image: url(ico.png)}
 .meau-btnc{position: absolute;
     right: 10px;
     top: 10px;
